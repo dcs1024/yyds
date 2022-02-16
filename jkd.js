@@ -3,13 +3,13 @@
 https://a.app.qq.com/o/simple.jsp?ctx=1644980653513&pkgname=com.xiangzi.jukandian&ckey=CK1416436838701
 邀请码必填得金币 24569843
 [rewrite_local]
-https://www.xiaodouzhuan.cn/jkd/user/userlive.action url script-request-body https://github.com/dcs1024/Script/edit/Pv/raw_scripts_jkd.js
+https://www.xiaodouzhuan.cn/jkd/user/userlive.action url script-request-body https://github.com/dcs1024/yyds/blob/main/jkd.js
 
 hostname = *.xiaodouzhuan.cn
 ##点任务获取数据##
 ===========ql===========
 拉取
-ql raw https://github.com/dcs1024/Script/edit/Pv/raw_scripts_jkd.js
+ql raw https://github.com/dcs1024/yyds/blob/main/jkd.js
 变量
 export jkdhd='{"openid": "替换的CK"}' 同CK 后面不需要!iOS!5.6.5
 
@@ -18,7 +18,7 @@ export jkdck='{"Cookie":"xz_jkd_appkey=替换的CK"}'
 多账号用@隔开
 */
 // [task_local]
-// */60 * * * * https://github.com/dcs1024/Script/edit/Pv/raw_scripts_jkd.js, tag=聚看点, img-url=circles.hexagongrid.fill.system, enabled=true
+// */60 * * * * https://github.com/dcs1024/yyds/blob/main/jkd.js, tag=聚看点, img-url=circles.hexagongrid.fill.system, enabled=true
 
 const $ = new Env('聚看点');
 let status;
